@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61A7BD62285BB88000240D49 /* EventsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61A7BD60285BB88000240D49 /* EventsApp.xcdatamodeld */; };
+		61A7BD64285BB91A00240D49 /* CoreDataMananer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7BD63285BB91A00240D49 /* CoreDataMananer.swift */; };
 		61E3F5C42846F11E00A3E63E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E3F5C32846F11E00A3E63E /* AppDelegate.swift */; };
 		61E3F5C62846F11E00A3E63E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E3F5C52846F11E00A3E63E /* SceneDelegate.swift */; };
-		61E3F5C82846F11E00A3E63E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E3F5C72846F11E00A3E63E /* ViewController.swift */; };
 		61E3F5CB2846F11E00A3E63E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E3F5C92846F11E00A3E63E /* Main.storyboard */; };
 		61E3F5CD2846F12100A3E63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61E3F5CC2846F12100A3E63E /* Assets.xcassets */; };
 		61E3F5D02846F12100A3E63E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E3F5CE2846F12100A3E63E /* LaunchScreen.storyboard */; };
@@ -20,10 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61A7BD61285BB88000240D49 /* EventsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventsApp.xcdatamodel; sourceTree = "<group>"; };
+		61A7BD63285BB91A00240D49 /* CoreDataMananer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMananer.swift; sourceTree = "<group>"; };
 		61E3F5C02846F11E00A3E63E /* EventApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E3F5C32846F11E00A3E63E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61E3F5C52846F11E00A3E63E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		61E3F5C72846F11E00A3E63E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61E3F5CA2846F11E00A3E63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61E3F5CC2846F12100A3E63E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61E3F5CF2846F12100A3E63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,19 +66,52 @@
 		61E3F5C22846F11E00A3E63E /* EventApp */ = {
 			isa = PBXGroup;
 			children = (
+				61E3F5E32847095100A3E63E /* Controllers */,
+				61E3F5E22847094800A3E63E /* Coordinators */,
+				61E3F5E12847093F00A3E63E /* Extensions */,
+				61E3F5DF2847091100A3E63E /* Models */,
 				61E3F5C32846F11E00A3E63E /* AppDelegate.swift */,
 				61E3F5C52846F11E00A3E63E /* SceneDelegate.swift */,
-				61E3F5C72846F11E00A3E63E /* ViewController.swift */,
 				61E3F5C92846F11E00A3E63E /* Main.storyboard */,
 				61E3F5CC2846F12100A3E63E /* Assets.xcassets */,
 				61E3F5CE2846F12100A3E63E /* LaunchScreen.storyboard */,
 				61E3F5D12846F12100A3E63E /* Info.plist */,
-				61E3F5D72846F1F100A3E63E /* AppCoordinator.swift */,
-				61E3F5D92846F67400A3E63E /* EventListCoordinator.swift */,
-				61E3F5DB2846F6E000A3E63E /* EventListViewController.swift */,
-				61E3F5DD2846FC1900A3E63E /* UIColor+Extention.swift */,
+				61A7BD60285BB88000240D49 /* EventsApp.xcdatamodeld */,
+				61A7BD63285BB91A00240D49 /* CoreDataMananer.swift */,
 			);
 			path = EventApp;
+			sourceTree = "<group>";
+		};
+		61E3F5DF2847091100A3E63E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		61E3F5E12847093F00A3E63E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				61E3F5DD2846FC1900A3E63E /* UIColor+Extention.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		61E3F5E22847094800A3E63E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				61E3F5D92846F67400A3E63E /* EventListCoordinator.swift */,
+				61E3F5D72846F1F100A3E63E /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		61E3F5E32847095100A3E63E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				61E3F5DB2846F6E000A3E63E /* EventListViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,11 +187,12 @@
 			files = (
 				61E3F5D82846F1F100A3E63E /* AppCoordinator.swift in Sources */,
 				61E3F5DC2846F6E000A3E63E /* EventListViewController.swift in Sources */,
-				61E3F5C82846F11E00A3E63E /* ViewController.swift in Sources */,
 				61E3F5C42846F11E00A3E63E /* AppDelegate.swift in Sources */,
 				61E3F5C62846F11E00A3E63E /* SceneDelegate.swift in Sources */,
 				61E3F5DA2846F67400A3E63E /* EventListCoordinator.swift in Sources */,
+				61A7BD64285BB91A00240D49 /* CoreDataMananer.swift in Sources */,
 				61E3F5DE2846FC1900A3E63E /* UIColor+Extention.swift in Sources */,
+				61A7BD62285BB88000240D49 /* EventsApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +410,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		61A7BD60285BB88000240D49 /* EventsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				61A7BD61285BB88000240D49 /* EventsApp.xcdatamodel */,
+			);
+			currentVersion = 61A7BD61285BB88000240D49 /* EventsApp.xcdatamodel */;
+			path = EventsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 61E3F5B82846F11E00A3E63E /* Project object */;
 }
