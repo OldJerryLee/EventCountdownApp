@@ -30,9 +30,24 @@
                     <view key="view" contentMode="scaleToFill" id="Zhl-lY-kin">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="26g-Wd-VAV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="z4H-gP-xc6"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z4H-gP-xc6" firstAttribute="trailing" secondItem="26g-Wd-VAV" secondAttribute="trailing" id="EcG-G2-B9c"/>
+                            <constraint firstItem="26g-Wd-VAV" firstAttribute="top" secondItem="z4H-gP-xc6" secondAttribute="top" id="Lf7-xn-SJj"/>
+                            <constraint firstItem="z4H-gP-xc6" firstAttribute="bottom" secondItem="26g-Wd-VAV" secondAttribute="bottom" id="YhE-Zi-4Um"/>
+                            <constraint firstItem="26g-Wd-VAV" firstAttribute="leading" secondItem="z4H-gP-xc6" secondAttribute="leading" id="tgH-KH-zZ6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="26g-Wd-VAV" id="qEC-gR-GTR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qc5-Hx-bWX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,8 +55,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
