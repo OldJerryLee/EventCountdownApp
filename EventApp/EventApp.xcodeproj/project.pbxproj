@@ -16,6 +16,7 @@
 		61A7BD62285BB88000240D49 /* EventsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61A7BD60285BB88000240D49 /* EventsApp.xcdatamodeld */; };
 		61A7BD64285BB91A00240D49 /* CoreDataMananer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7BD63285BB91A00240D49 /* CoreDataMananer.swift */; };
 		61A7BD67285BDF5600240D49 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7BD66285BDF5500240D49 /* EventListViewModel.swift */; };
+		61C972772951E169005574F1 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C972762951E169005574F1 /* Date+Extensions.swift */; };
 		61E3F5C42846F11E00A3E63E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E3F5C32846F11E00A3E63E /* AppDelegate.swift */; };
 		61E3F5C62846F11E00A3E63E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E3F5C52846F11E00A3E63E /* SceneDelegate.swift */; };
 		61E3F5CB2846F11E00A3E63E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E3F5C92846F11E00A3E63E /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		61A7BD61285BB88000240D49 /* EventsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventsApp.xcdatamodel; sourceTree = "<group>"; };
 		61A7BD63285BB91A00240D49 /* CoreDataMananer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMananer.swift; sourceTree = "<group>"; };
 		61A7BD66285BDF5500240D49 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		61C972762951E169005574F1 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		61E3F5C02846F11E00A3E63E /* EventApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E3F5C32846F11E00A3E63E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61E3F5C52846F11E00A3E63E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				61E3F5DD2846FC1900A3E63E /* UIColor+Extention.swift */,
 				61F242D629418181000EE5AE /* UIViewController+Extensions.swift */,
 				610B52F82950ED49008D9EA7 /* UIView+Extensions.swift */,
+				61C972762951E169005574F1 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			files = (
 				61F242DB29451840000EE5AE /* TitleSubtitleCellViewModel.swift in Sources */,
 				61E3F5D82846F1F100A3E63E /* AppCoordinator.swift in Sources */,
+				61C972772951E169005574F1 /* Date+Extensions.swift in Sources */,
 				610B52F92950ED49008D9EA7 /* UIView+Extensions.swift in Sources */,
 				61E3F5DC2846F6E000A3E63E /* EventListViewController.swift in Sources */,
 				61E3F5C42846F11E00A3E63E /* AppDelegate.swift in Sources */,

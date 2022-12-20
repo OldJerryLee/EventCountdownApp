@@ -9,6 +9,7 @@ import UIKit
 
 final class EventListCoordinator: Coordinator {
     private(set) var childCoordinators: [Coordinator] = []
+    var onSaveEvent = {}
 
     private let navigationController: UINavigationController
 
@@ -20,6 +21,7 @@ final class EventListCoordinator: Coordinator {
         let eventListController: EventListViewController = .instantiate()
         let eventListViewModel = EventListViewModel()
         eventListViewModel.coodinator = self
+        onSaveEvent = eventListViewModel.reload
         eventListController.viewModel = eventListViewModel
         navigationController.setViewControllers([eventListController], animated: false)
     }
