@@ -14,8 +14,8 @@
             filePath = "EventApp/Coordinators/EventListCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "childDidFinish(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -65,22 +65,6 @@
             startingLineNumber = "50"
             endingLineNumber = "50"
             landmarkName = "update(with:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BB43F068-8710-4A68-8463-3E4826E162FB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EventApp/Coordinators/EventListCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "childDidFinish(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
